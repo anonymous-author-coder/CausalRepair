@@ -17,10 +17,9 @@ Existing LLM-based APR approaches often suffer from either noise interference in
 
 ### 1. Prerequisites
 
-- JDK 1.8: Required for Defects4J compatibility.
+- JDK 1.8: Required for Defects4J.
 
 ```
-JDK 1.8 for Defects4J
 export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
 export PATH=$JAVA_HOME/bin:$PATH
 ```
@@ -37,7 +36,7 @@ export PATH=$PATH:"path2defects4j"/framework/bin
 
 
 ### 2. API Configuration
-Configure your API keys in utils/api_request.py. The framework supports SiliconFlow, OpenAI, and Zhipu AI.
+Configure your API keys in `utils/api_request.py`. The framework supports SiliconFlow, OpenAI, and Zhipu AI.
 
 
 ## Project Structure
@@ -60,7 +59,7 @@ CausalRepair
 
 ### Step 1: Iterative Repair
 
-Run the initial repair process using iterative_repair.py. This script constructs the causal context and engages in multi-round debugging with the LLM.
+Run the initial repair process using `iterative_repair.py`. This script constructs the causal context and engages in multi-round debugging with the LLM.
 
 Example Command:
 ```
@@ -76,7 +75,7 @@ python iterative_repair.py \
 
 ### Step 2: Collecting Plausible Patches
 
-After the iterative repair, extract patches that pass all test cases by running collect_plausible_patches.py. Ensure the input_file path in the script matches your output folder from Step 1.
+After the iterative repair, extract patches that pass all test cases by running `collect_plausible_patches.py`. Ensure the input_file path in the script matches your output folder from Step 1.
 
 ```
 python collect_plausible_patches.py
@@ -84,7 +83,7 @@ python collect_plausible_patches.py
 
 Step 3: Patch Augmentation (Phase 3)
 
-Use augment_patches.py to explore the solution space surrounding the plausible patches to find the correct fix.
+Use `augment_patches.py` to explore the solution space surrounding the plausible patches to find the correct fix.
 
 Example Command:
 ```
