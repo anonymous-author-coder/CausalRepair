@@ -55,8 +55,7 @@ def collect_patches(input_file_path, output_file_path):
     print(f"Results saved to: {output_file_path}")
 
 if __name__ == "__main__":
-    # 直接在程序中写死路径
-    input_file = "/root/autodl-tmp/APR/slicer4repair-rerun/results/rerun_d4j2.0/repair_result_iterative.json"
-    output_file = "plausible_patches_d4j20.json"
+    input_file = "repair_result_iterative.json"
+    output_file = "plausible_patches.json"
 
     collect_patches(input_file, output_file)
