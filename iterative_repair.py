@@ -24,7 +24,7 @@ PROJECT_ROOT = "../CausalRepair"
 DEFECTS4J_CMD = "../defects4j/framework/bin/defects4j"
 SINGLE_FUNCTION_JSON_PATH = os.path.join(PROJECT_ROOT, "Defects4j/single_function_repair.json")
 TEST_INFO_JSON_PATH = os.path.join(PROJECT_ROOT, "Defects4j/d4j_test_info_sf.json")
-SLICE_INFO_JSON_PATH = os.path.join(PROJECT_ROOT, "Defects4j/processed_results.json")
+SLICE_INFO_JSON_PATH = os.path.join(PROJECT_ROOT, "Defects4j/d4j_slice_info.json")
 LOCATION_FOLDER_PATH = os.path.join(PROJECT_ROOT, "Defects4j/location")
 # ===================================================================================
 
